@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+</head>
+<%- include('./partials/nav') %>
+
+<body>
+  <h1>Full Menu</h1>
+
+
+  <% RESTAURANT.menu.forEach(function(oneRESTURANT){%>
+    
+    <ul>
+    <li>name: <%= oneRESTURANT.name%></li>
+    <li>price: <%= oneRESTURANT.price%></li>
+    <li>phone: <%= oneRESTURANT.phone%></li>
+</ul>
+ <% })%>
+    
+  
+
+
+</body>
+</html>
