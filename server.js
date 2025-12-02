@@ -74,7 +74,7 @@ app.get("/menu",(req,res)=>{
 app.get('/menu/:category', (req, res) => {
 
     const categoryName = req.params.category;
-    const menuItems = RESTAURANT.menu.filter(item => item.category === categoryName);
+    const menuItems = RESTAURANT.menu.filter((item) => item.category === categoryName);
     const formattedCategory =
         categoryName ;
 
